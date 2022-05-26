@@ -187,28 +187,10 @@ with open('real_values_doc/femaleValues.csv', 'w') as csvfile:
     for data in femaleValues:
         writer.writerow(data)
 
-with open('real_values_doc/maleChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in maleChangeValues:
-        writer.writerow(data)
-
-with open('real_values_doc/femaleChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in femaleChangeValues:
-        writer.writerow(data)
-
 with open('real_values_doc/totValues.csv', 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=doc_name)
     writer.writeheader()
     for data in totValues:
-        writer.writerow(data)
-
-with open('real_values_doc/totChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in totChangeValues:
         writer.writerow(data)
     
 
@@ -227,26 +209,8 @@ with open('norm_values_doc/femaleValues.csv', 'w') as csvfile:
     for data in femaleValuesNorm:
         writer.writerow(data)
 
-with open('norm_values_doc/maleChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in maleChangeValuesNorm:
-        writer.writerow(data)
-
-with open('norm_values_doc/femaleChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in femaleChangeValuesNorm:
-        writer.writerow(data)
-
 with open('norm_values_doc/totValues.csv', 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=doc_name)
     writer.writeheader()
     for data in totValuesNorm:
-        writer.writerow(data)
-
-with open('norm_values_doc/totChangeValues.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=doc_name)
-    writer.writeheader()
-    for data in totChangeValuesNorm:
         writer.writerow(data)

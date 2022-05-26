@@ -115,18 +115,6 @@ with open('var.csv', 'w') as csvfile:
     for data in values:
         writer.writerow(data) 
 
-values = []
-for i in range(len(var_per_info['Sex'])):
-    sup = {}
-    for n in features_name:
-        sup[n] = var_per_info[n][i]
-    values.append(sup)
-
-with open('std_percentage.csv', 'w') as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=features_name)
-    writer.writeheader()
-    for data in values:
-        writer.writerow(data) 
 
 
 

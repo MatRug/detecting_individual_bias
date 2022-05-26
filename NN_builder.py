@@ -8,7 +8,7 @@ import lime
 import lime.lime_tabular
 import matplotlib.pyplot as plt
 
-csv_open = open('train_case-7.csv')
+csv_open = open('train_case-1.csv')
 csv_reader = csv.reader(csv_open, delimiter=',')
 
 a = True
@@ -31,7 +31,7 @@ labels = np.array(labels)
 
 trainFeatures, valFeatures, trainLabels, valLabels = train_test_split(features, labels, test_size=0.2)
 
-csv_open = open('test_case-7.csv')
+csv_open = open('test_case-1.csv')
 csv_reader = csv.reader(csv_open, delimiter=',')
 
 a = True
